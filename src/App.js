@@ -16,16 +16,14 @@ import PetProject from "./pages/PetProject";
 function App() {
   return (
     <div className="App">
-        <Router>
+        <Router basename="/portfolio">
           <ScrollToTop/>
           <Navbar/>
             <Routes>
               <Route path="/" element={<Home />}/>
               <Route path="/projects" element={<Projects />}/>
-
               <Route path="/petProjects" element={<PetProjects />}/>
               <Route path="/petProject/:id" element={<PetProject />}/>
-              
               <Route path="/project/:id" element={<Project />}/>
               <Route path="/contacts" element={<Contacts />}/>
             </Routes>
